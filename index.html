@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>首页</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="app-page">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark small">S</div>
+        <div>
+          <strong>Console</strong>
+          <span>管理工作台</span>
+        </div>
+      </div>
+      <nav class="nav-list" aria-label="主导航">
+        <a class="nav-item active" href="#overview"><span>首页概览</span></a>
+        <a class="nav-item" href="#business"><span>业务管理</span></a>
+        <a class="nav-item" href="#data"><span>数据中心</span></a>
+        <a class="nav-item" href="#settings"><span>系统设置</span></a>
+      </nav>
+      <div class="sidebar-footer">
+        <button class="secondary-button full" id="logoutButton" type="button">退出登录</button>
+      </div>
+    </aside>
+
+    <section class="main-area">
+      <header class="topbar">
+        <button class="icon-button mobile-only" id="menuButton" type="button" aria-label="展开菜单">☰</button>
+        <div>
+          <p class="eyebrow">DASHBOARD</p>
+          <h1>首页</h1>
+        </div>
+        <div class="user-chip">
+          <div class="avatar">U</div>
+          <div>
+            <strong id="displayUsername">用户</strong>
+            <span>管理员</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard-content" id="overview">
+        <section class="hero-card">
+          <div>
+            <p class="eyebrow light">OVERVIEW</p>
+            <h2>欢迎回来，<span id="welcomeUsername">用户</span></h2>
+            <p>当前首页先提供通用业务后台框架，后续可以根据你现有 src 网页继续补充模块、接口和页面跳转。</p>
+          </div>
+          <div class="hero-stat">
+            <span>今日状态</span>
+            <strong>正常</strong>
+          </div>
+        </section>
+
+        <section class="stats-grid" aria-label="关键指标">
+          <article class="stat-card"><span>待处理任务</span><strong>12</strong><small>较昨日 +2</small></article>
+          <article class="stat-card"><span>本月访问</span><strong>8,642</strong><small>保持稳定</small></article>
+          <article class="stat-card"><span>活跃用户</span><strong>326</strong><small>近 7 日</small></article>
+          <article class="stat-card"><span>系统消息</span><strong>5</strong><small>2 条未读</small></article>
+        </section>
+
+        <section class="content-grid">
+          <article class="panel-card" id="business">
+            <div class="panel-heading"><div><p class="eyebrow">QUICK ACCESS</p><h3>快捷入口</h3></div></div>
+            <div class="quick-grid">
+              <button class="quick-item" type="button"><strong>新增记录</strong><span>创建新的业务数据</span></button>
+              <button class="quick-item" type="button"><strong>查看报表</strong><span>进入统计与分析</span></button>
+              <button class="quick-item" type="button"><strong>用户管理</strong><span>管理账号与权限</span></button>
+              <button class="quick-item" type="button"><strong>系统配置</strong><span>调整全局参数</span></button>
+            </div>
+          </article>
+
+          <article class="panel-card" id="data">
+            <div class="panel-heading"><div><p class="eyebrow">ACTIVITY</p><h3>最近动态</h3></div><button class="link-button" type="button">查看全部</button></div>
+            <div class="activity-list">
+              <div class="activity-item"><span class="activity-dot"></span><div><strong>登录成功</strong><p>当前账号已进入管理后台</p></div><time>刚刚</time></div>
+              <div class="activity-item"><span class="activity-dot"></span><div><strong>数据同步完成</strong><p>首页指标已完成更新</p></div><time>10 分钟前</time></div>
+              <div class="activity-item"><span class="activity-dot"></span><div><strong>系统检查</strong><p>所有基础服务运行正常</p></div><time>1 小时前</time></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </section>
+  </div>
+  <div class="sidebar-mask" id="sidebarMask"></div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
